@@ -1,0 +1,4 @@
+---
+- name: create a user
+  user:
+    name: "{{ user_name }}"

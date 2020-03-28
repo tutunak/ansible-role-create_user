@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ansible-role-create_user"
+      include_role:
+        name: "ansible-role-create_user"
+      vars:
+        user_name: test_user
